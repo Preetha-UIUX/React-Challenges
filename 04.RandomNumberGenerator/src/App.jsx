@@ -18,7 +18,13 @@ function App() {
     const start = Number(startRange);
     const end = Number(endRange);
 
-    if(NaN(start) || NaN(end)) {
+    if (startRange === '' || endRange === '') {
+      setErrorMessage('Please enter both start and end range.');
+      setRandomNumber(null);
+      return;
+    }
+
+    if(isNaN(start) || isNaN(end)) {
       setErrorMessage('Invalid Input');
       setRandomNumber(null);
     } else if (start > end) {

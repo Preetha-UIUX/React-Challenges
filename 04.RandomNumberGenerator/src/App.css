@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#randomNumber {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#error {
+  color: red;
+}
