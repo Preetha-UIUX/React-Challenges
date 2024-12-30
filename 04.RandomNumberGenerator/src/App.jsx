@@ -28,7 +28,7 @@ function App() {
       setErrorMessage('Invalid Input');
       setRandomNumber(null);
     } else if (start > end) {
-      setErrorMessage('Start Range cant be greater than end Range');
+      setErrorMessage('StartRange cant be greater than EndRange');
       setRandomNumber(null);
     } else {
       const random = Math.floor(Math.random() * (end - start + 1)) + start;
